@@ -12,6 +12,10 @@ const getImages = async (index) => {
   });
 }
 
-for (let i = 1; i < 97; i++) {
-  await getImages(i)
+async function getAllImages() {
+  for (let i = 1; i < 97; i++) {
+    await getImages(i)
+  } 
 }
+
+getAllImages()
