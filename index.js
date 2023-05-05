@@ -15,9 +15,9 @@ const getImages = async (index, directory) => {
 }
 
 async function getAllImages() {
-  const directory = '3965a637933d7965e'
+  const directory = '3929a215b0cd9150c'
   fs.mkdirSync(directory)
-  const page = 3
+  const page = 65
   for (let i = 1; i < page; i++) {
     await getImages(i, directory)
   } 
